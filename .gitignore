@@ -46,3 +46,13 @@ Thumbs.db
 .env
 .env.local
 
+# Reports and temp files
+reports/
+templates/articles/
+*.json
+!schema_*.json
+
+# API keys
+*.key
+*.pem
+

@@ -1,0 +1,263 @@
+"""
+Schema.org Generator - Генератор структурированных данных
+==========================================================
+
+Генерирует Schema.org разметку для сайта DimKava
+
+Использование:
+    python -m automation.schema_generator
+
+"""
+
+import json
+from typing import Dict, List
+
+
+class SchemaGenerator:
+    """Генератор Schema.org разметки"""
+    
+    def __init__(self, company_name: str = "DimKava"):
+        self.company_name = company_name
+        self.base_url = "https://dimkava.com"  # TODO: заменить на реальный
+    
+    def generate_local_business(self) -> Dict:
+        """Генерирует разметку LocalBusiness"""
+        return {
+            "@context": "https://schema.org",
+            "@type": ["LocalBusiness", "CoffeeShop", "Store"],
+            "name": "DimKava | Дом Кофе",
+            "alternateName": "Дом Кофе",
+            "description": "Комплексный подход к кофе: магазин-кофейня, продажа кофе Blasercafe, кофемашины Delonghi, официальный сервисный центр Delonghi",
+            "image": f"{self.base_url}/images/logo.jpg",
+            "url": self.base_url,
+            "telephone": "+380XXXXXXXXX",  # TODO: заполнить
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ул. Название, 123",  # TODO: заполнить
+                "addressLocality": "Город",  # TODO: заполнить
+                "postalCode": "00000",  # TODO: заполнить
+                "addressCountry": "UA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "00.000000",  # TODO: заполнить
+                "longitude": "00.000000"  # TODO: заполнить
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "20:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Saturday", "Sunday"],
+                    "opens": "10:00",
+                    "closes": "19:00"
+                }
+            ],
+            "sameAs": [
+                "https://www.facebook.com/dimkava",
+                "https://www.instagram.com/dimkava"
+            ]
+        }
+    
+    def generate_organization(self) -> Dict:
+        """Генерирует разметку Organization"""
+        return {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "DimKava",
+            "alternateName": "Дом Кофе",
+            "url": self.base_url,
+            "logo": f"{self.base_url}/images/logo.jpg",
+            "sameAs": [
+                "https://www.facebook.com/dimkava",
+                "https://www.instagram.com/dimkava"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+380XXXXXXXXX",
+                "contactType": "Customer Service",
+                "availableLanguage": ["Russian", "Ukrainian"]
+            }
+        }
+    
+    def generate_product(self, product_name: str, price: float, brand: str = "Blasercafe") -> Dict:
+        """Генерирует разметку Product для кофе"""
+        return {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": product_name,
+            "image": f"{self.base_url}/images/products/{product_name.lower().replace(' ', '-')}.jpg",
+            "description": f"Премиум кофе {product_name} от {brand}",
+            "brand": {
+                "@type": "Brand",
+                "name": brand
+            },
+            "offers": {
+                "@type": "Offer",
+                "url": f"{self.base_url}/products/{product_name.lower().replace(' ', '-')}",
+                "price": price,
+                "priceCurrency": "UAH",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "DimKava"
+                }
+            }
+        }
+    
+    def generate_service(self) -> Dict:
+        """Генерирует разметку Service для сервиса Delonghi"""
+        return {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Ремонт и обслуживание кофемашин Delonghi",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "DimKava - Официальный сервисный центр Delonghi",
+                "image": f"{self.base_url}/images/service.jpg",
+                "telephone": "+380XXXXXXXXX",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "ул. Название, 123",
+                    "addressLocality": "Город"
+                }
+            },
+            "areaServed": {
+                "@type": "City",
+                "name": "Город"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Услуги сервисного центра",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Диагностика кофемашины"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Ремонт кофемашин Delonghi"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Профилактическое обслуживание"
+                        }
+                    }
+                ]
+            }
+        }
+    
+    def generate_faq_page(self, faqs: List[Dict[str, str]]) -> Dict:
+        """
+        Генерирует разметку FAQPage
+        
+        Args:
+            faqs: список словарей с ключами 'question' и 'answer'
+        """
+        return {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": faq["question"],
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq["answer"]
+                    }
+                }
+                for faq in faqs
+            ]
+        }
+    
+    def generate_article(self, title: str, content: str, author: str, date: str) -> Dict:
+        """Генерирует разметку Article"""
+        return {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": title,
+            "image": f"{self.base_url}/images/articles/{title.lower().replace(' ', '-')}.jpg",
+            "author": {
+                "@type": "Person",
+                "name": author,
+                "jobTitle": "Эксперт DimKava"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "DimKava",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": f"{self.base_url}/images/logo.jpg"
+                }
+            },
+            "datePublished": date,
+            "dateModified": date,
+            "description": content[:200] + "..."
+        }
+    
+    def export_schema(self, schema: Dict, filename: str):
+        """Экспортирует схему в JSON файл"""
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(schema, f, ensure_ascii=False, indent=2)
+        print(f"✅ Schema сохранена: {filename}")
+    
+    def export_html_script(self, schema: Dict) -> str:
+        """Экспортирует схему как HTML script tag"""
+        json_ld = json.dumps(schema, ensure_ascii=False, indent=2)
+        return f'<script type="application/ld+json">\n{json_ld}\n</script>'
+
+
+def main():
+    """Основная функция"""
+    print("🏗️  Генератор Schema.org разметки для DimKava\n")
+    
+    generator = SchemaGenerator()
+    
+    # Генерируем разметки
+    print("Генерирую разметку LocalBusiness...")
+    local_business = generator.generate_local_business()
+    generator.export_schema(local_business, "schema_local_business.json")
+    
+    print("\nГенерирую разметку Organization...")
+    organization = generator.generate_organization()
+    generator.export_schema(organization, "schema_organization.json")
+    
+    print("\nГенерирую разметку Service...")
+    service = generator.generate_service()
+    generator.export_schema(service, "schema_service.json")
+    
+    print("\nГенерирую пример FAQPage...")
+    example_faqs = [
+        {
+            "question": "Где находится официальный сервисный центр Delonghi?",
+            "answer": "Официальный сервисный центр Delonghi находится в DimKava по адресу [ваш адрес]. Мы предлагаем гарантийный и постгарантийный ремонт всех моделей Delonghi."
+        },
+        {
+            "question": "Какой кофе подходит для кофемашины?",
+            "answer": "Для автоматических кофемашин рекомендуется использовать свежеобжаренный кофе в зернах. Мы предлагаем кофе Blasercafe, специально подобранный для эспрессо-машин."
+        }
+    ]
+    faq_page = generator.generate_faq_page(example_faqs)
+    generator.export_schema(faq_page, "schema_faq.json")
+    
+    print("\n✅ Все схемы сгенерированы!")
+    print("\nHTML версии (для вставки на сайт):")
+    print("\n" + generator.export_html_script(local_business))
+
+
+if __name__ == "__main__":
+    main()
+
