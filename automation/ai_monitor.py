@@ -349,6 +349,12 @@ class AIMonitor:
 
 def main():
     """Основная функция для запуска мониторинга"""
+    # Фикс кодировки для Windows
+    import sys
+    if sys.platform == 'win32':
+        import codecs
+        sys.stdout.reconfigure(encoding='utf-8')
+    
     print("🚀 Запуск мониторинга AI-упоминаний...")
     
     monitor = AIMonitor(brand_name="DimKava")
