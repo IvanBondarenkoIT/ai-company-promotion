@@ -1,6 +1,8 @@
 # 🤖 Automation Scripts - Автоматизация продвижения DimKava
 
-Набор Python скриптов для автоматизации различных аспектов продвижения в AI-поиске.
+🇬🇪 **DimKava в Грузии:** Тбилиси | Батуми
+
+Набор Python скриптов для автоматизации различных аспектов продвижения в AI-поиске с учетом локального рынка Грузии.
 
 ## 📦 Установка
 
@@ -91,14 +93,19 @@ python -m automation.schema_generator
 ```
 
 **Что генерирует**:
-- `LocalBusiness` - информация о магазине
+- `LocalBusiness` - информация о магазинах (Тбилиси + Батуми)
 - `Organization` - информация о компании
 - `Product` - разметка товаров (кофе, оборудование)
-- `Service` - разметка услуг сервиса
+- `Service` - разметка услуг сервиса (для обеих локаций)
 - `FAQPage` - разметка FAQ
 - `Article` - разметка статей
 
-**Результат**: JSON файлы + HTML <script> теги для вставки на сайт
+**Результат**: JSON файлы для обеих локаций + HTML <script> теги для вставки на сайт:
+- `schema_tbilisi_local_business.json`
+- `schema_tbilisi_service.json`
+- `schema_batumi_local_business.json`
+- `schema_batumi_service.json`
+- `schema_organization.json`
 
 ---
 
@@ -153,10 +160,18 @@ GOOGLE_API_KEY=your_google_key
 
 # Company Info
 COMPANY_NAME=DimKava
-COMPANY_URL=https://dimkava.com
-COMPANY_PHONE=+380XXXXXXXXX
-COMPANY_ADDRESS=ул. Название, 123
-COMPANY_CITY=Город
+COMPANY_URL=https://dimkava.ge
+COMPANY_COUNTRY=GE
+
+# Tbilisi Location
+TBILISI_PHONE=+995XXXXXXXXX
+TBILISI_ADDRESS=ул. Название, 123
+TBILISI_CITY=Тбилиси
+
+# Batumi Location
+BATUMI_PHONE=+995XXXXXXXXX
+BATUMI_ADDRESS=ул. Название, 456
+BATUMI_CITY=Батуми
 ```
 
 ---

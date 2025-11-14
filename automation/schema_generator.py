@@ -18,31 +18,61 @@ class SchemaGenerator:
     
     def __init__(self, company_name: str = "DimKava"):
         self.company_name = company_name
-        self.base_url = "https://dimkava.com"  # TODO: заменить на реальный
+        self.base_url = "https://dimkava.ge"
+        
+        # Локации в Грузии
+        self.locations = {
+            "tbilisi": {
+                "city": "Тбилиси",
+                "city_en": "Tbilisi",
+                "street": "ул. Название, 123",  # TODO: заполнить
+                "postal_code": "0100",
+                "lat": "41.7151",
+                "lon": "44.8271",
+                "phone": "+995XXXXXXXXX"  # TODO: заполнить
+            },
+            "batumi": {
+                "city": "Батуми",
+                "city_en": "Batumi",
+                "street": "ул. Название, 456",  # TODO: заполнить
+                "postal_code": "6010",
+                "lat": "41.6168",
+                "lon": "41.6367",
+                "phone": "+995XXXXXXXXX"  # TODO: заполнить
+            }
+        }
     
-    def generate_local_business(self) -> Dict:
-        """Генерирует разметку LocalBusiness"""
+    def generate_local_business(self, location: str = "tbilisi") -> Dict:
+        """
+        Генерирует разметку LocalBusiness для конкретной локации
+        
+        Args:
+            location: "tbilisi" или "batumi"
+        """
+        loc_data = self.locations.get(location, self.locations["tbilisi"])
+        
         return {
             "@context": "https://schema.org",
             "@type": ["LocalBusiness", "CoffeeShop", "Store"],
-            "name": "DimKava | Дом Кофе",
+            "name": f"DimKava {loc_data['city']} | Дом Кофе",
             "alternateName": "Дом Кофе",
-            "description": "Комплексный подход к кофе: магазин-кофейня, продажа кофе Blasercafe, кофемашины Delonghi, официальный сервисный центр Delonghi",
+            "description": f"Комплексный подход к кофе в {loc_data['city']}, Грузия: магазин-кофейня, продажа кофе Blasercafe, кофемашины Delonghi, официальный сервисный центр Delonghi",
             "image": f"{self.base_url}/images/logo.jpg",
-            "url": self.base_url,
-            "telephone": "+380XXXXXXXXX",  # TODO: заполнить
+            "url": f"{self.base_url}/{location}",
+            "telephone": loc_data["phone"],
             "priceRange": "$$",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "ул. Название, 123",  # TODO: заполнить
-                "addressLocality": "Город",  # TODO: заполнить
-                "postalCode": "00000",  # TODO: заполнить
-                "addressCountry": "UA"
+                "streetAddress": loc_data["street"],
+                "addressLocality": loc_data["city"],
+                "addressRegion": loc_data["city_en"],
+                "postalCode": loc_data["postal_code"],
+                "addressCountry": "GE"
             },
             "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "00.000000",  # TODO: заполнить
-                "longitude": "00.000000"  # TODO: заполнить
+                "latitude": loc_data["lat"],
+                "longitude": loc_data["lon"]
             },
             "openingHoursSpecification": [
                 {
@@ -56,6 +86,20 @@ class SchemaGenerator:
                     "dayOfWeek": ["Saturday", "Sunday"],
                     "opens": "10:00",
                     "closes": "19:00"
+                }
+            ],
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Tbilisi"
+                },
+                {
+                    "@type": "City",
+                    "name": "Batumi"
+                },
+                {
+                    "@type": "Country",
+                    "name": "Georgia"
                 }
             ],
             "sameAs": [
@@ -110,27 +154,41 @@ class SchemaGenerator:
             }
         }
     
-    def generate_service(self) -> Dict:
-        """Генерирует разметку Service для сервиса Delonghi"""
+    def generate_service(self, location: str = "tbilisi") -> Dict:
+        """
+        Генерирует разметку Service для сервиса Delonghi
+        
+        Args:
+            location: "tbilisi" или "batumi"
+        """
+        loc_data = self.locations.get(location, self.locations["tbilisi"])
+        
         return {
             "@context": "https://schema.org",
             "@type": "Service",
             "serviceType": "Ремонт и обслуживание кофемашин Delonghi",
             "provider": {
                 "@type": "LocalBusiness",
-                "name": "DimKava - Официальный сервисный центр Delonghi",
+                "name": f"DimKava {loc_data['city']} - Официальный сервисный центр Delonghi",
                 "image": f"{self.base_url}/images/service.jpg",
-                "telephone": "+380XXXXXXXXX",
+                "telephone": loc_data["phone"],
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "ул. Название, 123",
-                    "addressLocality": "Город"
+                    "streetAddress": loc_data["street"],
+                    "addressLocality": loc_data["city"],
+                    "addressCountry": "GE"
                 }
             },
-            "areaServed": {
-                "@type": "City",
-                "name": "Город"
-            },
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": loc_data["city_en"]
+                },
+                {
+                    "@type": "Country",
+                    "name": "Georgia"
+                }
+            ],
             "hasOfferCatalog": {
                 "@type": "OfferCatalog",
                 "name": "Услуги сервисного центра",
@@ -222,22 +280,35 @@ class SchemaGenerator:
 
 def main():
     """Основная функция"""
-    print("🏗️  Генератор Schema.org разметки для DimKava\n")
+    print("🏗️  Генератор Schema.org разметки для DimKava (Грузия)\n")
     
     generator = SchemaGenerator()
     
-    # Генерируем разметки
+    # Генерируем разметки для Тбилиси
+    print("📍 ТБИЛИСИ:")
     print("Генерирую разметку LocalBusiness...")
-    local_business = generator.generate_local_business()
-    generator.export_schema(local_business, "schema_local_business.json")
+    local_business_tb = generator.generate_local_business("tbilisi")
+    generator.export_schema(local_business_tb, "schema_tbilisi_local_business.json")
     
-    print("\nГенерирую разметку Organization...")
+    print("Генерирую разметку Service...")
+    service_tb = generator.generate_service("tbilisi")
+    generator.export_schema(service_tb, "schema_tbilisi_service.json")
+    
+    # Генерируем разметки для Батуми
+    print("\n📍 БАТУМИ:")
+    print("Генерирую разметку LocalBusiness...")
+    local_business_bt = generator.generate_local_business("batumi")
+    generator.export_schema(local_business_bt, "schema_batumi_local_business.json")
+    
+    print("Генерирую разметку Service...")
+    service_bt = generator.generate_service("batumi")
+    generator.export_schema(service_bt, "schema_batumi_service.json")
+    
+    # Общие разметки
+    print("\n🌍 ОБЩЕЕ:")
+    print("Генерирую разметку Organization...")
     organization = generator.generate_organization()
     generator.export_schema(organization, "schema_organization.json")
-    
-    print("\nГенерирую разметку Service...")
-    service = generator.generate_service()
-    generator.export_schema(service, "schema_service.json")
     
     print("\nГенерирую пример FAQPage...")
     example_faqs = [
@@ -254,8 +325,14 @@ def main():
     generator.export_schema(faq_page, "schema_faq.json")
     
     print("\n✅ Все схемы сгенерированы!")
-    print("\nHTML версии (для вставки на сайт):")
-    print("\n" + generator.export_html_script(local_business))
+    print("\n📌 Создано:")
+    print("   - schema_tbilisi_local_business.json")
+    print("   - schema_tbilisi_service.json")
+    print("   - schema_batumi_local_business.json")
+    print("   - schema_batumi_service.json")
+    print("   - schema_organization.json")
+    print("\nHTML версии для вставки на сайт:")
+    print("\n" + generator.export_html_script(local_business_tb))
 
 
 if __name__ == "__main__":
