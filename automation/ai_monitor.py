@@ -30,6 +30,14 @@ from datetime import datetime
 from typing import List, Dict
 import json
 
+# Попытка загрузить .env файл
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    print("⚠️  Модуль python-dotenv не установлен. Установите: pip install python-dotenv")
+    print("    Переменные окружения будут загружены из системы.")
+
 # Тестовые запросы для проверки (с учетом локации в Грузии)
 TEST_QUERIES = [
     # Русские запросы - Тбилиси
@@ -77,47 +85,124 @@ class AIMonitor:
         
         NOTE: Требует API ключ OpenAI
         """
-        # TODO: Реализовать через OpenAI API
-        return {
+        result = {
             "ai": "ChatGPT",
             "query": query,
+            "status": "not_implemented",  # success / failed / no_api_key / not_implemented
             "mentioned": False,
             "timestamp": datetime.now().isoformat(),
-            "response_snippet": ""
+            "response_snippet": "",
+            "error": None
         }
+        
+        # Проверяем наличие API ключа
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            result["status"] = "no_api_key"
+            result["error"] = "API ключ не найден в .env файле"
+            return result
+        
+        try:
+            # TODO: Реализовать через OpenAI API
+            # from openai import OpenAI
+            # client = OpenAI(api_key=api_key)
+            # response = client.chat.completions.create(...)
+            # result["response_snippet"] = response.choices[0].message.content[:200]
+            # result["mentioned"] = self.brand_name.lower() in response_text.lower()
+            # result["status"] = "success"
+            
+            result["status"] = "not_implemented"
+            result["error"] = "Интеграция с API еще не реализована"
+            
+        except Exception as e:
+            result["status"] = "failed"
+            result["error"] = str(e)
+        
+        return result
     
     def test_gemini(self, query: str) -> Dict:
         """Тестирует Google Gemini"""
-        # TODO: Реализовать через Google AI API
-        return {
+        result = {
             "ai": "Gemini",
             "query": query,
+            "status": "not_implemented",
             "mentioned": False,
             "timestamp": datetime.now().isoformat(),
-            "response_snippet": ""
+            "response_snippet": "",
+            "error": None
         }
+        
+        api_key = os.getenv("GOOGLE_API_KEY")
+        if not api_key:
+            result["status"] = "no_api_key"
+            result["error"] = "API ключ не найден в .env файле"
+            return result
+        
+        try:
+            # TODO: Реализовать через Google AI API
+            result["status"] = "not_implemented"
+            result["error"] = "Интеграция с API еще не реализована"
+        except Exception as e:
+            result["status"] = "failed"
+            result["error"] = str(e)
+        
+        return result
     
     def test_claude(self, query: str) -> Dict:
         """Тестирует Claude (Anthropic)"""
-        # TODO: Реализовать через Anthropic API
-        return {
+        result = {
             "ai": "Claude",
             "query": query,
+            "status": "not_implemented",
             "mentioned": False,
             "timestamp": datetime.now().isoformat(),
-            "response_snippet": ""
+            "response_snippet": "",
+            "error": None
         }
+        
+        api_key = os.getenv("ANTHROPIC_API_KEY")
+        if not api_key:
+            result["status"] = "no_api_key"
+            result["error"] = "API ключ не найден в .env файле"
+            return result
+        
+        try:
+            # TODO: Реализовать через Anthropic API
+            result["status"] = "not_implemented"
+            result["error"] = "Интеграция с API еще не реализована"
+        except Exception as e:
+            result["status"] = "failed"
+            result["error"] = str(e)
+        
+        return result
     
     def test_perplexity(self, query: str) -> Dict:
         """Тестирует Perplexity AI"""
-        # TODO: Реализовать через Perplexity API
-        return {
+        result = {
             "ai": "Perplexity",
             "query": query,
+            "status": "not_implemented",
             "mentioned": False,
             "timestamp": datetime.now().isoformat(),
-            "response_snippet": ""
+            "response_snippet": "",
+            "error": None
         }
+        
+        api_key = os.getenv("PERPLEXITY_API_KEY")
+        if not api_key:
+            result["status"] = "no_api_key"
+            result["error"] = "API ключ не найден в .env файле"
+            return result
+        
+        try:
+            # TODO: Реализовать через Perplexity API
+            result["status"] = "not_implemented"
+            result["error"] = "Интеграция с API еще не реализована"
+        except Exception as e:
+            result["status"] = "failed"
+            result["error"] = str(e)
+        
+        return result
     
     def run_full_test(self) -> Dict:
         """
@@ -149,16 +234,43 @@ class AIMonitor:
         
         # Подсчитываем статистику
         total_tests = len(TEST_QUERIES) * 4  # 4 AI
-        mentions = sum(
-            1 for qr in results["results"] 
-            for ar in qr["ai_responses"] 
-            if ar["mentioned"]
-        )
+        
+        # Подсчет по статусам
+        status_counts = {
+            "success": 0,
+            "failed": 0,
+            "no_api_key": 0,
+            "not_implemented": 0
+        }
+        
+        mentions = 0
+        
+        for qr in results["results"]:
+            for ar in qr["ai_responses"]:
+                status = ar.get("status", "unknown")
+                if status in status_counts:
+                    status_counts[status] += 1
+                
+                if ar["mentioned"]:
+                    mentions += 1
+        
+        # Рассчитываем процент успешных запросов
+        successful_tests = status_counts["success"]
+        success_rate = (successful_tests / total_tests * 100) if total_tests > 0 else 0
+        
+        # Процент упоминаний от успешных запросов
+        mention_rate = (mentions / successful_tests * 100) if successful_tests > 0 else 0
         
         results["statistics"] = {
             "total_tests": total_tests,
+            "successful_tests": successful_tests,
+            "failed_tests": status_counts["failed"],
+            "no_api_key_tests": status_counts["no_api_key"],
+            "not_implemented_tests": status_counts["not_implemented"],
+            "success_rate": f"{success_rate:.1f}%",
             "mentions": mentions,
-            "mention_rate": f"{(mentions/total_tests)*100:.1f}%"
+            "mention_rate": f"{mention_rate:.1f}%",
+            "mention_rate_of_total": f"{(mentions/total_tests)*100:.1f}%"
         }
         
         return results
@@ -193,16 +305,44 @@ class AIMonitor:
         stats = results['statistics']
         report.append("СТАТИСТИКА:")
         report.append(f"  Всего тестов: {stats['total_tests']}")
-        report.append(f"  Упоминаний: {stats['mentions']}")
-        report.append(f"  Процент упоминаний: {stats['mention_rate']}")
+        report.append("")
+        report.append("  Статус запросов:")
+        report.append(f"    ✅ Успешно выполнено: {stats['successful_tests']}")
+        report.append(f"    ❌ Ошибка: {stats['failed_tests']}")
+        report.append(f"    🔑 Нет API ключа: {stats['no_api_key_tests']}")
+        report.append(f"    ⏳ Не реализовано: {stats['not_implemented_tests']}")
+        report.append(f"    📊 Процент успешных: {stats['success_rate']}")
+        report.append("")
+        report.append("  Упоминания бренда:")
+        report.append(f"    🎯 Упоминаний найдено: {stats['mentions']}")
+        report.append(f"    📈 Процент от успешных: {stats['mention_rate']}")
+        report.append(f"    📊 Процент от общего: {stats['mention_rate_of_total']}")
         report.append("")
         
         report.append("ДЕТАЛИ ПО ЗАПРОСАМ:")
         for i, qr in enumerate(results['results'], 1):
             report.append(f"\n{i}. {qr['query']}")
             for ar in qr['ai_responses']:
-                status = "✅" if ar['mentioned'] else "❌"
-                report.append(f"   {status} {ar['ai']}")
+                # Определяем иконку статуса
+                if ar['status'] == 'success':
+                    if ar['mentioned']:
+                        icon = "✅ НАЙДЕН"
+                    else:
+                        icon = "❌ НЕ НАЙДЕН"
+                elif ar['status'] == 'no_api_key':
+                    icon = "🔑 НЕТ КЛЮЧА"
+                elif ar['status'] == 'failed':
+                    icon = "⚠️ ОШИБКА"
+                elif ar['status'] == 'not_implemented':
+                    icon = "⏳ НЕ РЕАЛИЗОВАНО"
+                else:
+                    icon = "❓ НЕИЗВЕСТНО"
+                
+                report.append(f"   {icon} - {ar['ai']}")
+                
+                # Показываем ошибку если есть
+                if ar.get('error') and ar['status'] in ['failed', 'no_api_key']:
+                    report.append(f"      └─ {ar['error']}")
         
         return "\n".join(report)
 
