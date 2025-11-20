@@ -82,20 +82,17 @@ class AIMonitor:
     def test_chatgpt(self, query: str) -> Dict:
         """
         Тестирует ChatGPT на упоминание бренда
-        
-        NOTE: Требует API ключ OpenAI
         """
         result = {
             "ai": "ChatGPT",
             "query": query,
-            "status": "not_implemented",  # success / failed / no_api_key / not_implemented
+            "status": "unknown",
             "mentioned": False,
             "timestamp": datetime.now().isoformat(),
             "response_snippet": "",
             "error": None
         }
         
-        # Проверяем наличие API ключа
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             result["status"] = "no_api_key"
@@ -103,17 +100,26 @@ class AIMonitor:
             return result
         
         try:
-            # TODO: Реализовать через OpenAI API
-            # from openai import OpenAI
-            # client = OpenAI(api_key=api_key)
-            # response = client.chat.completions.create(...)
-            # result["response_snippet"] = response.choices[0].message.content[:200]
-            # result["mentioned"] = self.brand_name.lower() in response_text.lower()
-            # result["status"] = "success"
+            from openai import OpenAI
+            client = OpenAI(api_key=api_key)
             
-            result["status"] = "not_implemented"
-            result["error"] = "Интеграция с API еще не реализована"
+            response = client.chat.completions.create(
+                model="gpt-4",  # или gpt-3.5-turbo
+                messages=[
+                    {"role": "system", "content": "You are a helpful assistant. Answer the user's question about coffee in Georgia."},
+                    {"role": "user", "content": query}
+                ],
+                max_tokens=300
+            )
             
+            response_text = response.choices[0].message.content
+            result["response_snippet"] = response_text[:200] + "..."
+            result["mentioned"] = self.brand_name.lower() in response_text.lower()
+            result["status"] = "success"
+            
+        except ImportError:
+            result["status"] = "failed"
+            result["error"] = "Библиотека openai не установлена"
         except Exception as e:
             result["status"] = "failed"
             result["error"] = str(e)
@@ -125,7 +131,7 @@ class AIMonitor:
         result = {
             "ai": "Gemini",
             "query": query,
-            "status": "not_implemented",
+            "status": "unknown",
             "mentioned": False,
             "timestamp": datetime.now().isoformat(),
             "response_snippet": "",
@@ -139,9 +145,20 @@ class AIMonitor:
             return result
         
         try:
-            # TODO: Реализовать через Google AI API
-            result["status"] = "not_implemented"
-            result["error"] = "Интеграция с API еще не реализована"
+            import google.generativeai as genai
+            genai.configure(api_key=api_key)
+            
+            model = genai.GenerativeModel('gemini-pro')
+            response = model.generate_content(query)
+            
+            response_text = response.text
+            result["response_snippet"] = response_text[:200] + "..."
+            result["mentioned"] = self.brand_name.lower() in response_text.lower()
+            result["status"] = "success"
+            
+        except ImportError:
+            result["status"] = "failed"
+            result["error"] = "Библиотека google-generativeai не установлена"
         except Exception as e:
             result["status"] = "failed"
             result["error"] = str(e)
@@ -153,7 +170,7 @@ class AIMonitor:
         result = {
             "ai": "Claude",
             "query": query,
-            "status": "not_implemented",
+            "status": "unknown",
             "mentioned": False,
             "timestamp": datetime.now().isoformat(),
             "response_snippet": "",
@@ -167,9 +184,25 @@ class AIMonitor:
             return result
         
         try:
-            # TODO: Реализовать через Anthropic API
-            result["status"] = "not_implemented"
-            result["error"] = "Интеграция с API еще не реализована"
+            from anthropic import Anthropic
+            client = Anthropic(api_key=api_key)
+            
+            message = client.messages.create(
+                model="claude-3-opus-20240229",
+                max_tokens=300,
+                messages=[
+                    {"role": "user", "content": query}
+                ]
+            )
+            
+            response_text = message.content[0].text
+            result["response_snippet"] = response_text[:200] + "..."
+            result["mentioned"] = self.brand_name.lower() in response_text.lower()
+            result["status"] = "success"
+            
+        except ImportError:
+            result["status"] = "failed"
+            result["error"] = "Библиотека anthropic не установлена"
         except Exception as e:
             result["status"] = "failed"
             result["error"] = str(e)
@@ -177,11 +210,11 @@ class AIMonitor:
         return result
     
     def test_perplexity(self, query: str) -> Dict:
-        """Тестирует Perplexity AI"""
+        """Тестирует Perplexity AI (через OpenAI совместимый API)"""
         result = {
             "ai": "Perplexity",
             "query": query,
-            "status": "not_implemented",
+            "status": "unknown",
             "mentioned": False,
             "timestamp": datetime.now().isoformat(),
             "response_snippet": "",
@@ -195,9 +228,27 @@ class AIMonitor:
             return result
         
         try:
-            # TODO: Реализовать через Perplexity API
-            result["status"] = "not_implemented"
-            result["error"] = "Интеграция с API еще не реализована"
+            from openai import OpenAI
+            # Perplexity использует OpenAI-совместимый клиент
+            client = OpenAI(api_key=api_key, base_url="https://api.perplexity.ai")
+            
+            response = client.chat.completions.create(
+                model="sonar-medium-online",  # Актуальная модель Perplexity
+                messages=[
+                    {"role": "system", "content": "Be precise and concise."},
+                    {"role": "user", "content": query}
+                ],
+                max_tokens=300
+            )
+            
+            response_text = response.choices[0].message.content
+            result["response_snippet"] = response_text[:200] + "..."
+            result["mentioned"] = self.brand_name.lower() in response_text.lower()
+            result["status"] = "success"
+            
+        except ImportError:
+            result["status"] = "failed"
+            result["error"] = "Библиотека openai не установлена"
         except Exception as e:
             result["status"] = "failed"
             result["error"] = str(e)
