@@ -45,6 +45,7 @@ docs/
 - **`prompts/START_HERE.md`** - точка входа, навигация
 - **`docs/technical/instructions/КАК_ИСПОЛЬЗОВАТЬ.md`** - инструкции
 - **`docs/technical/instructions/GOOGLE_MY_BUSINESS_SETUP.md`** ⭐ - **Настройка Google My Business для AI-продвижения**
+- **`docs/technical/instructions/WORDPRESS_FAQ_SETUP.md`** ⭐ - **Добавление FAQ на WordPress + WooCommerce для AI-поиска**
 
 **Философия компании:**
 - **`docs/brand/philosophy/ФИЛОСОФИЯ_DIMKAVA_ОТ_АЛЕКСАНДРА.txt`** - полная философия

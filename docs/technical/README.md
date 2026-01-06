@@ -27,6 +27,9 @@
 - `КАК_ИСПОЛЬЗОВАТЬ.md` - Как использовать проект
 - `ОБНОВЛЕНИЕ_ПРОЕКТА.md` - Что обновлено
 - `ТРАНСКРИБАЦИЯ_АУДИО.md` - Транскрибация аудио
+- `GOOGLE_MY_BUSINESS_SETUP.md` ⭐ - Настройка Google My Business для AI-продвижения
+- `WORDPRESS_FAQ_SETUP.md` ⭐ - **Добавление FAQ на WordPress + WooCommerce для AI-поиска**
+- `IT_SPECIALIST_ROADMAP.md` - Roadmap для IT-специалиста
 
 **Когда использовать:**
 - Настройка проекта
