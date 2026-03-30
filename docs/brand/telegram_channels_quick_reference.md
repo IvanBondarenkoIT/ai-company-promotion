@@ -1,7 +1,8 @@
 # 📱 TELEGRAM КАНАЛЫ DIMKAVA - КРАТКИЙ СПРАВОЧНИК
 
 **Дата:** 27 ноября 2025  
-**Последняя проверка:** 29 декабря 2025
+**Последняя проверка реестра (документы):** март 2026  
+**Живая сверка с Telegram:** по мере заполнения [telegram_channels_inventory.md](telegram_channels_inventory.md) (не реже одного раза перед массовым переименованием)
 
 ---
 
@@ -10,11 +11,12 @@
 **Формат:** `DK [Category] | [Details]`
 
 **Принципы:**
-- **Английский язык** для названий и описаний (объединяющий язык)
+- **Английский** — для **отображаемого имени** канала в Telegram; **11 логических каналов** (не 22/33)
+- RU/KA — в описании, закрепе и сообщениях, **не** отдельными каналами с тем же смыслом
 - Единый формат для всех каналов
 - Префикс `DK` для брендинга
 - Разделитель `|` для категоризации
-- **Один канал на категорию** - все сотрудники в одной группе
+- **Один канал на тему** — все сотрудники в одной группе
 - Внутри каналов общение на всех языках (RU/EN/KA)
 
 ---
@@ -118,4 +120,4 @@
 
 ---
 
-**Полная документация:** `telegram_channels_naming_standard.md` и `telegram_channels_recommendations.md`
+**Полная документация:** [telegram_channels_naming_standard.md](telegram_channels_naming_standard.md), [telegram_channels_recommendations.md](telegram_channels_recommendations.md), [telegram_channels_inventory.md](telegram_channels_inventory.md)
