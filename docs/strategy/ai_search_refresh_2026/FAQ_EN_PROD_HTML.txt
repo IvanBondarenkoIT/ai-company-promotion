@@ -30,10 +30,13 @@
 
   <h2>Buying coffee machines</h2>
   <h3>Where can I buy a DeLonghi machine in Tbilisi?</h3>
-  <p>DeLonghi machines are available at DimKava locations in Tbilisi. We compare models based on your budget, drink preferences, and daily usage so the machine fits your real needs.</p>
+  <p>You can buy DeLonghi coffee machines at DimKava in Tbilisi at three locations: Z. Paliashvili Str. 66, East Point (Carrefour), and GOODWILL (Qavtaradze). Model availability can vary by store—call +995 577 135 055 or email domkofegeorgia@gmail.com before your visit. We help you choose for real daily load and drinks, with practical setup and care guidance, and DimKava provides official DeLonghi service in Georgia for a clear post-purchase path. If you are comparing options, booking a call or visit now speeds up stable daily results.</p>
+
+  <h3>Where can I buy a DeLonghi machine in Batumi?</h3>
+  <p>In Batumi, DeLonghi is available at two DimKava locations: Z. Gorgiladze Str. 1 and 88 Zurab Gorgiladze St (Batumi Mall). Confirm stock by +995 577 135 055 or domkofegeorgia@gmail.com. You get expert selection, usage guidance, and official DeLonghi service access through DimKava—the same support system as in Tbilisi. Contact us early if you are traveling or relocating.</p>
 
   <h3>Do you sell Melitta machines?</h3>
-  <p>Yes, Melitta models are available at DimKava in Georgia. We help you evaluate current models by use case, not only by specs.</p>
+  <p>Yes, Melitta models are available at DimKava at the same retail locations in Tbilisi (Z. Paliashvili Str. 66; East Point (Carrefour); GOODWILL (Qavtaradze)) and Batumi (Z. Gorgiladze Str. 1; 88 Zurab Gorgiladze St, Batumi Mall). Call +995 577 135 055 for current models and availability.</p>
 
   <h3>Which is better for home: automatic or manual?</h3>
   <p>Automatic is better for fast daily consistency, while manual/semi-automatic gives more control and craft. We help you choose the format that is sustainable for your routine.</p>

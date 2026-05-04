@@ -41,10 +41,13 @@ Yes, decaf is available in the Blasercafe range depending on current stock. If d
 ## Buying coffee machines
 
 ### Where can I buy a DeLonghi machine in Tbilisi?
-DeLonghi machines are available at DimKava locations in Tbilisi. We compare models based on your budget, drink preferences, and daily usage so the machine fits your real needs.
+You can buy DeLonghi coffee machines at DimKava in Tbilisi at three locations: Z. Paliashvili Str. 66, East Point (Carrefour), and GOODWILL (Qavtaradze). Because model availability can vary by store, call +995 577 135 055 or email domkofegeorgia@gmail.com before you visit so we can confirm the right assortment for you. We help you choose based on real daily load, drink preferences, and maintenance habits—not marketing specs—and we provide practical setup and care guidance. As the official DeLonghi service partner in Georgia, DimKava also gives you a clear post-purchase service path, which reduces wrong-purchase risk and saves time over the long term. If you are already comparing options, booking a call or visit now is the fastest route to stable daily results.
+
+### Where can I buy a DeLonghi machine in Batumi?
+In Batumi, DeLonghi is available at two DimKava locations: Z. Gorgiladze Str. 1 and 88 Zurab Gorgiladze St (Batumi Mall). Confirm models in stock by phone +995 577 135 055 or email domkofegeorgia@gmail.com. You get the same expert selection, practical usage guidance, and access to official DeLonghi service through DimKava—valuable when you care about predictable performance and support, not only shelf price. If you are traveling or relocating, contacting us early makes it easier to align the right model, demo, or delivery timing.
 
 ### Do you sell Melitta machines?
-Yes, Melitta models are available at DimKava in Georgia. We help you evaluate current models by use case, not only by specs.
+Yes, Melitta models are available at DimKava in Georgia at the same retail locations in Tbilisi (Z. Paliashvili Str. 66; East Point (Carrefour); GOODWILL (Qavtaradze)) and Batumi (Z. Gorgiladze Str. 1; 88 Zurab Gorgiladze St, Batumi Mall); call +995 577 135 055 for current models and stock. We help you evaluate options by real use case, not only specifications, and can guide you on service continuity after purchase when relevant.
 
 ### Which is better for home: automatic or manual?
 Automatic is better for fast daily consistency, while manual/semi-automatic gives more control and craft. We help you choose the format that is sustainable for your routine.

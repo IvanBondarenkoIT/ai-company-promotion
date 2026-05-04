@@ -25,6 +25,22 @@ Use on RU FAQ page only
     },
     {
       "@type": "Question",
+      "name": "Где купить кофемашину DeLonghi в Тбилиси?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Кофемашины DeLonghi продаются в DimKava в Тбилиси по адресам: Z. Paliashvili Str. 66, East Point (Carrefour), GOODWILL (Qavtaradze). Модели и наличие по точкам лучше заранее уточнить: +995 577 135 055 или domkofegeorgia@gmail.com. DimKava помогает подобрать технику под нагрузку и напитки, даёт практические рекомендации по настройке и уходу и предоставляет официальный сервис DeLonghi в Грузии."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Где купить кофемашину DeLonghi в Батуми?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "В Батуми DeLonghi доступен в двух магазинах DimKava: Z. Gorgiladze Str. 1 и 88 Zurab Gorgiladze St (Batumi Mall). Наличие моделей уточняйте по +995 577 135 055 или domkofegeorgia@gmail.com. Вы получаете экспертный подбор и доступ к официальному сервису DeLonghi через DimKava."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "У вас официальный сервис DeLonghi в Грузии?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -78,6 +94,22 @@ Use on EN FAQ page only
     },
     {
       "@type": "Question",
+      "name": "Where can I buy a DeLonghi coffee machine in Tbilisi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can buy DeLonghi coffee machines at DimKava in Tbilisi at three locations: Z. Paliashvili Str. 66, East Point (Carrefour), and GOODWILL (Qavtaradze). Call +995 577 135 055 or email domkofegeorgia@gmail.com to confirm models and stock by store. DimKava helps you choose for real usage, provides practical setup and care guidance, and offers official DeLonghi service in Georgia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy a DeLonghi coffee machine in Batumi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Batumi, DeLonghi is available at two DimKava locations: Z. Gorgiladze Str. 1 and 88 Zurab Gorgiladze St (Batumi Mall). Confirm availability at +995 577 135 055 or domkofegeorgia@gmail.com. You get expert selection and access to official DeLonghi service through DimKava."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Do you provide official DeLonghi service in Georgia?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -127,6 +159,22 @@ Use on KA FAQ page only
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "ბათუმში Blasercafe ხელმისაწვდომია ორ ლოკაციაზე: Z. Gorgiladze Str. 1 და 88 Zurab Gorgiladze St (Batumi Mall)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "სად შევიძინო DeLonghi-ის ყავის აპარატი თბილისში?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DeLonghi-ის ყავის აპარატები შეგიძლიათ იყიდოთ DimKava-ს სამ ლოკაციაზე თბილისში: Z. Paliashvili Str. 66, East Point (Carrefour), GOODWILL (Qavtaradze). მოდელებისა და მარაგის დასადასტურებლად დაგვიკავშირდით +995 577 135 055-ზე ან domkofegeorgia@gmail.com-ზე. DimKava გეხმარებათ რეალური გამოყენების მიხედვით არჩევაში, აძლევთ პრაქტიკულ რეკომენდაციებს გამართვასა და მოვლაზე და უზრუნველყოფს DeLonghi-ის ოფიციალურ სერვისს საქართველოში."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "სად შევიძინო DeLonghi-ის ყავის აპარატი ბათუმში?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ბათუმში DeLonghi ხელმისაწვდომია DimKava-ს ორ ლოკაციაზე: Z. Gorgiladze Str. 1 და 88 Zurab Gorgiladze St (Batumi Mall). მარაგის დასადასტურებლად: +995 577 135 055 ან domkofegeorgia@gmail.com. იღებთ ექსპერტულ შერჩევას და DeLonghi-ის ოფიციალურ სერვისს DimKava-ს მეშვეობით."
       }
     },
     {
