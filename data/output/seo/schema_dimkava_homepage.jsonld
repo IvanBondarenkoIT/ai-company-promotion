@@ -1,0 +1,218 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dimkava.ge/#organization",
+      "name": "Dim Kava",
+      "alternateName": "DimKava",
+      "url": "https://dimkava.ge",
+      "description": "Swiss Blasercafe coffee, DeLonghi, Melitta, Nivona and Gaggia machines, and official DeLonghi service in Georgia.",
+      "email": "domkofegeorgia@gmail.com",
+      "telephone": "+995 577 135 055",
+      "sameAs": [
+        "https://www.facebook.com/dimkava",
+        "https://www.instagram.com/dimkava"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dimkava.ge/#website",
+      "url": "https://dimkava.ge",
+      "name": "Dim Kava",
+      "publisher": {
+        "@id": "https://dimkava.ge/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "ka",
+        "ru"
+      ]
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "CoffeeShop",
+        "Store"
+      ],
+      "@id": "https://dimkava.ge/#tbilisi-paliashvili-66",
+      "name": "DimKava Tbilisi - Z. Paliashvili Str. 66",
+      "description": "Swiss Blasercafe coffee, coffee machines, and official DeLonghi service in Tbilisi, Georgia.",
+      "url": "https://dimkava.ge",
+      "telephone": "+995 577 135 055",
+      "email": "domkofegeorgia@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Z. Paliashvili Str. 66",
+        "addressLocality": "Tbilisi",
+        "addressCountry": "GE"
+      },
+      "areaServed": [
+        "Tbilisi",
+        "Georgia"
+      ],
+      "availableLanguage": [
+        "en",
+        "ka",
+        "ru"
+      ]
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "CoffeeShop",
+        "Store"
+      ],
+      "@id": "https://dimkava.ge/#tbilisi-east-point",
+      "name": "DimKava Tbilisi - East Point (Carrefour)",
+      "description": "Swiss Blasercafe coffee and coffee machines in Tbilisi, Georgia.",
+      "url": "https://dimkava.ge",
+      "telephone": "+995 577 135 055",
+      "email": "domkofegeorgia@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "East Point (Carrefour)",
+        "addressLocality": "Tbilisi",
+        "addressCountry": "GE"
+      },
+      "areaServed": [
+        "Tbilisi",
+        "Georgia"
+      ],
+      "availableLanguage": [
+        "en",
+        "ka",
+        "ru"
+      ]
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "CoffeeShop",
+        "Store"
+      ],
+      "@id": "https://dimkava.ge/#tbilisi-goodwill-qavtaradze",
+      "name": "DimKava Tbilisi - GOODWILL (Qavtaradze)",
+      "description": "Swiss Blasercafe coffee and coffee machines in Tbilisi, Georgia.",
+      "url": "https://dimkava.ge",
+      "telephone": "+995 577 135 055",
+      "email": "domkofegeorgia@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "GOODWILL (Qavtaradze)",
+        "addressLocality": "Tbilisi",
+        "addressCountry": "GE"
+      },
+      "areaServed": [
+        "Tbilisi",
+        "Georgia"
+      ],
+      "availableLanguage": [
+        "en",
+        "ka",
+        "ru"
+      ]
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "CoffeeShop",
+        "Store"
+      ],
+      "@id": "https://dimkava.ge/#batumi-gorgiladze-1",
+      "name": "DimKava Batumi - Z. Gorgiladze Str. 1",
+      "description": "Swiss Blasercafe coffee and coffee machines in Batumi, Georgia.",
+      "url": "https://dimkava.ge",
+      "telephone": "+995 577 135 055",
+      "email": "domkofegeorgia@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Z. Gorgiladze Str. 1",
+        "addressLocality": "Batumi",
+        "addressCountry": "GE"
+      },
+      "areaServed": [
+        "Batumi",
+        "Georgia"
+      ],
+      "availableLanguage": [
+        "en",
+        "ka",
+        "ru"
+      ]
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "CoffeeShop",
+        "Store"
+      ],
+      "@id": "https://dimkava.ge/#batumi-gorgiladze-88",
+      "name": "DimKava Batumi - Batumi Mall",
+      "description": "Swiss Blasercafe coffee, coffee machines, and official DeLonghi service in Batumi, Georgia.",
+      "url": "https://dimkava.ge",
+      "telephone": "+995 577 135 055",
+      "email": "info@dimkava.ge",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "88 Zurab Gorgiladze St, Batumi Mall",
+        "addressLocality": "Batumi",
+        "addressCountry": "GE"
+      },
+      "areaServed": [
+        "Batumi",
+        "Georgia"
+      ],
+      "availableLanguage": [
+        "en",
+        "ka",
+        "ru"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://dimkava.ge/#delonghi-service",
+      "name": "DeLonghi official service in Georgia",
+      "serviceType": "Coffee machine diagnostics, repair, and maintenance",
+      "provider": {
+        "@id": "https://dimkava.ge/#organization"
+      },
+      "areaServed": [
+        "Tbilisi",
+        "Batumi",
+        "Georgia"
+      ],
+      "telephone": "+995 577 135 077"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dimkava.ge/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you provide official DeLonghi service in Georgia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. DimKava provides official DeLonghi service in Georgia. Contact service line +995 577 135 077."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is DimKava located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DimKava operates in Georgia with locations in Tbilisi and Batumi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What coffee brands do you offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer Swiss Blasercafe coffee in multiple blends and roast profiles."
+          }
+        }
+      ]
+    }
+  ]
+}

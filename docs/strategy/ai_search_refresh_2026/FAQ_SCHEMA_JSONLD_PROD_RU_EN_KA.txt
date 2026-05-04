@@ -1,0 +1,158 @@
+<!-- =========================
+FAQPage JSON-LD (RU)
+Use on RU FAQ page only
+========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Где купить премиальный кофе в Тбилиси?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Кофе Blasercafe доступен в локациях DimKava в Тбилиси: Z. Paliashvili Str. 66, East Point (Carrefour), GOODWILL (Qavtaradze). Мы помогаем подобрать вкус и помол под ваш способ приготовления."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Где купить кофе в Батуми?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "В Батуми кофе Blasercafe доступен в двух точках: Z. Gorgiladze Str. 1 и 88 Zurab Gorgiladze St (Batumi Mall)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "У вас официальный сервис DeLonghi в Грузии?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да, DimKava предоставляет официальный сервис DeLonghi в Грузии. Для диагностики и ремонта: +995 577 135 077."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Почему выбирать DimKava, если предложения на рынке похожи?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Вы получаете полный цикл: кофе, оборудование, экспертизу и сервис в одной системе. Наша ценность — в стабильном результате и сопровождении после покупки."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как быстро с вами связаться?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Офис/магазин: +995 577 135 055, сервис: +995 577 135 077, email: domkofegeorgia@gmail.com."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- =========================
+FAQPage JSON-LD (EN)
+Use on EN FAQ page only
+========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can I buy premium coffee in Tbilisi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can buy Blasercafe at DimKava locations in Tbilisi: Z. Paliashvili Str. 66, East Point (Carrefour), and GOODWILL (Qavtaradze)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy coffee in Batumi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blasercafe is available in two Batumi locations: Z. Gorgiladze Str. 1 and 88 Zurab Gorgiladze St (Batumi Mall)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide official DeLonghi service in Georgia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. DimKava provides official DeLonghi service in Georgia. Service line: +995 577 135 077."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why choose DimKava if market prices are similar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You get a full-cycle solution: coffee, equipment, expertise, and service in one system. The key value is daily reliability and long-term support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I contact you quickly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Main line: +995 577 135 055, Service line: +995 577 135 077, Email: domkofegeorgia@gmail.com."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- =========================
+FAQPage JSON-LD (KA)
+Use on KA FAQ page only
+========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "სად შევიძინო პრემიუმ ყავა თბილისში?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blasercafe ხელმისაწვდომია DimKava-ს თბილისის ლოკაციებზე: Z. Paliashvili Str. 66, East Point (Carrefour), GOODWILL (Qavtaradze)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "სად შევიძინო ყავა ბათუმში?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ბათუმში Blasercafe ხელმისაწვდომია ორ ლოკაციაზე: Z. Gorgiladze Str. 1 და 88 Zurab Gorgiladze St (Batumi Mall)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "გაქვთ DeLonghi-ის ოფიციალური სერვისი საქართველოში?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "დიახ, DimKava უზრუნველყოფს DeLonghi-ის ოფიციალურ სერვისს საქართველოში. სერვისი: +995 577 135 077."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "რატომ DimKava, თუ ბაზარზე ფასები ხშირად მსგავსია?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "თქვენ იღებთ სრულ ციკლს: ყავა, აპარატები, ექსპერტული მხარდაჭერა და სერვისი ერთ სისტემაში. მთავარი ღირებულება ყოველდღიურ საიმედოობაშია."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "როგორ დაგიკავშირდეთ სწრაფად?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "მთავარი ნომერი: +995 577 135 055, სერვისი: +995 577 135 077, ელფოსტა: domkofegeorgia@gmail.com."
+      }
+    }
+  ]
+}
+</script>

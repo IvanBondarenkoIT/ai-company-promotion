@@ -1,86 +1,126 @@
-# FAQ — English (for dimkava.ge)
+# FAQ v2 — English (canonical version)
 
-**Source:** adapted from [docs/brand/FAQ_DIMKAVA_DRAFT.md](../../brand/FAQ_DIMKAVA_DRAFT.md)  
-**Use:** paste into WordPress FAQ page (EN). Add `FAQPage` JSON-LD — see [FAQ_SCHEMA_JSONLD_EXAMPLE.md](FAQ_SCHEMA_JSONLD_EXAMPLE.md).
-
-**Note:** Verify hours, phone numbers, and legal claims with operations before publishing.
-
----
-
-## Blasercafe coffee
-
-### What coffee do you sell?
-We sell **Blasercafe** — premium Swiss coffee with long-standing roasting expertise. We carry about **15 varieties** for different moods: blends and single-origin options.
-
-### Where is Blasercafe roasted and packed?
-All Blasercafe sold by us is **roasted and packed in Switzerland** at Blaser. For single-origin lines, green coffee is sourced via Blaser Trading (Switzerland) and roasted using Blaser technology.
-
-### Can I taste coffee before buying?
-Yes. When you buy a pack of coffee, we offer a **complimentary tasting espresso**. You can also explore the aromas of the coffees available in our stores.
-
-### How many Blasercafe varieties do you have?
-About **15 varieties**, including blends and single-origin, different roast levels, and **decaf** options.
-
-### What grind can you prepare?
-We can grind for **any brewing method**: espresso, filter, Turkish-style, French press — tell us how you brew at home.
-
-### Do you sell decaf?
-Yes — **decaf** is available in the Blasercafe range.
-
-### How should I store coffee?
-Blasercafe uses vacuum packaging with a valve. After opening, store in a **cool, dry place**, ideally in an airtight container.
-
-### Why is your coffee more expensive than supermarket coffee?
-Because it is **premium Swiss coffee** with stable quality over time, no flavor additives, professional guidance, tasting, and grind-to-order service.
+**Purpose:** master editorial file for EN FAQ.  
+**Tone priority:** expertise > warmth > premium.  
+**Marketing framework:** each answer softly covers 4 points — why this product, why us, why value is justified, why act now.
 
 ---
 
-## Coffee machines
+## Quick answer
 
-### Which brands do you sell?
-We focus on leading espresso brands, including **De’Longhi**, **Gaggia**, **Melitta**, and **Nivona**.
+DimKava is a specialty coffee and coffee machine business in Georgia with locations in Tbilisi and Batumi. We provide more than products: selection, training, after-purchase support, and official DeLonghi service.
 
-### How do I choose a machine for home?
-**Fully automatic** if you want one-touch drinks. **Manual / semi-automatic** if you enjoy barista-style workflow. Our team helps you choose based on budget, daily volume, kitchen space, and preferences.
+## Key facts
 
-### Is there a warranty?
-Yes — typically **2–4 years depending on the model** (confirm on the product page / at purchase).
-
-### What is included when I buy a coffee machine?
-Typically includes in-store testing, **training** for basic drinks, setup guidance, warranty paperwork, and a **Blasercafe gift** / loyalty benefits (as per current store policy).
-
-### Where do I repair my machine?
-DimKava provides **official De’Longhi service in Georgia** with original parts and professional repair. Contact the **service line** listed on the website.
-
-### Do machines need maintenance?
-Yes — descaling, cleaning brew groups, and filter replacement (where applicable). We explain care during purchase and offer service support.
+- Locations: Tbilisi and Batumi, Georgia
+- Tbilisi: Z. Paliashvili Str. 66; East Point (Carrefour); GOODWILL (Qavtaradze)
+- Batumi: Z. Gorgiladze Str. 1; 88 Zurab Gorgiladze St (Batumi Mall)
+- Core brands: Blasercafe, DeLonghi, Melitta, Gaggia, Nivona
+- Main line: +995 577 135 055
+- Service line: +995 577 135 077
+- Email: domkofegeorgia@gmail.com
 
 ---
 
-## Purchase, delivery, locations
+## Buying coffee
 
-### Where are you located?
-We operate in **Georgia**: **Tbilisi** and **Batumi**. Store hours may differ by location (mall vs street) — confirm on Contacts.
+### Where can I buy premium coffee in Tbilisi?
+You can buy Blasercafe at DimKava locations in Tbilisi: Z. Paliashvili Str. 66, East Point (Carrefour), and GOODWILL (Qavtaradze). We also help you choose the right flavor profile and grind for your brewing method, so you get a reliable result from day one.
 
-### Do you deliver?
-Yes — **free delivery within the city** (Tbilisi / Batumi) per our policy; confirm exceptions at checkout or with staff.
+### Where can I buy coffee in Batumi?
+Blasercafe is available in two Batumi locations: Z. Gorgiladze Str. 1 and 88 Zurab Gorgiladze St (Batumi Mall). Our team helps match coffee to your taste and routine, so your choice is practical, not random.
 
-### Payment methods?
-Cash, card, and **bank transfer for businesses** (invoicing) where applicable.
+### Do you grind coffee for different brew methods?
+Yes — espresso, filter, Turkish style, French press, and more. Correct grind has direct impact on taste, so we adjust it to your machine and method at purchase.
 
-### Do you sell wholesale / B2B?
-Yes — offices, cafés, hotels. Contact us for terms and invoicing.
-
----
-
-## Training & why DimKava
-
-### Do you train customers?
-Yes — especially with machine purchases: espresso, americano, cappuccino basics, grind basics, and daily care.
-
-### Why choose DimKava?
-Because we offer a **full loop**: **Blasercafe** (Swiss coffee), premium machines, expertise since **2004**, and **official De’Longhi service** in Georgia — not just a one-off sale.
+### Do you offer decaf?
+Yes, decaf is available in the Blasercafe range depending on current stock. If decaf is your priority, contact us first and we will guide you to the right option.
 
 ---
 
-**Last updated:** YYYY-MM-DD
+## Buying coffee machines
+
+### Where can I buy a DeLonghi machine in Tbilisi?
+DeLonghi machines are available at DimKava locations in Tbilisi. We compare models based on your budget, drink preferences, and daily usage so the machine fits your real needs.
+
+### Do you sell Melitta machines?
+Yes, Melitta models are available at DimKava in Georgia. We help you evaluate current models by use case, not only by specs.
+
+### Which is better for home: automatic or manual?
+Automatic is better for fast daily consistency, while manual/semi-automatic gives more control and craft. We help you choose the format that is sustainable for your routine.
+
+### What do I get besides the machine itself?
+You get guidance on selection, setup recommendations, care basics, and a clear service route. The key value is stable performance and confidence after purchase, not only the hardware.
+
+---
+
+## Service and reliability
+
+### Do you provide official DeLonghi service in Georgia?
+Yes. DimKava provides official DeLonghi service in Georgia. This gives you a clear diagnostics/repair process and lower risk of long downtime.
+
+### Where should I contact if my machine has an issue?
+Contact service line +995 577 135 077 or email domkofegeorgia@gmail.com. Early contact with model and symptom details helps resolve issues faster.
+
+### Can I request service from Batumi?
+Yes, requests are supported from both Batumi locations: Z. Gorgiladze Str. 1 and 88 Zurab Gorgiladze St (Batumi Mall). The team will guide next steps based on your case.
+
+### What should I prepare before service request?
+Prepare machine model, brief issue description, and purchase/warranty details if available. This helps speed up diagnostics and routing.
+
+---
+
+## Value and choosing us
+
+### Why choose DimKava if market prices are similar?
+Because you get a full-cycle solution: coffee, equipment, expertise, and service in one system. The difference is not price pressure but daily reliability and long-term support.
+
+### Why is your value stronger than product-only sellers?
+We stay with the customer after purchase through guidance, care recommendations, and service continuity. This reduces wrong choices, saves time, and lowers ownership risks.
+
+### Why does it make sense to act now?
+When selection and setup are done correctly now, you avoid preventable problems later and get better daily results sooner. If you are already considering purchase or service, booking the next step now is the most practical move.
+
+### Why buy from DimKava instead of a marketplace seller?
+Marketplace offers are often product-only, while we provide a full support system: pre-purchase guidance, setup recommendations, and a clear post-purchase service route. This reduces selection mistakes and gives more stable long-term use.
+
+### How do I choose by budget without overpaying?
+We map the choice to your real usage: cups per day, drink types, and expected level of control. This helps avoid paying for features you will not use and avoids under-spec choices that create problems later.
+
+---
+
+## Delivery, payment, B2B
+
+### Do you deliver in Tbilisi and Batumi?
+Yes, delivery is available in both cities according to current policy. We confirm exact timing and conditions at order stage.
+
+### Which payment methods are available?
+Cash, card, and bank transfer for legal entities are available under current policy.
+
+### Do you work with offices, cafes, and hotels?
+Yes, we support B2B clients and help align coffee/equipment setup with business workload. For terms and invoicing: +995 577 135 055 or domkofegeorgia@gmail.com.
+
+### Can you build a business setup based on cups-per-day demand?
+Yes. For B2B clients, we design machine and coffee setup around expected volume, menu format, and operational constraints. This gives more reliable performance than selecting equipment by specs only.
+
+---
+
+## Contacts and locations
+
+### Tbilisi
+- Z. Paliashvili Str. 66
+- East Point (Carrefour)
+- GOODWILL (Qavtaradze)
+
+### Batumi
+- Z. Gorgiladze Str. 1
+- 88 Zurab Gorgiladze St (Batumi Mall)
+
+### Quick contact
+- Main line: +995 577 135 055
+- Service line: +995 577 135 077
+- Email: domkofegeorgia@gmail.com
+
+---
+
+**Last updated:** 2026-05-04

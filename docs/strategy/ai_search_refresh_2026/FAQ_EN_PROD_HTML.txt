@@ -1,0 +1,102 @@
+<section id="dimkava-faq-en">
+  <h1>DimKava FAQ (English)</h1>
+
+  <h2>Quick answer</h2>
+  <p>DimKava is a specialty coffee and coffee machine business in Georgia with locations in Tbilisi and Batumi. We provide more than products: selection, training, after-purchase support, and official DeLonghi service.</p>
+
+  <h2>Key facts</h2>
+  <ul>
+    <li>Locations: Tbilisi and Batumi, Georgia</li>
+    <li>Tbilisi: Z. Paliashvili Str. 66; East Point (Carrefour); GOODWILL (Qavtaradze)</li>
+    <li>Batumi: Z. Gorgiladze Str. 1; 88 Zurab Gorgiladze St (Batumi Mall)</li>
+    <li>Core brands: Blasercafe, DeLonghi, Melitta, Gaggia, Nivona</li>
+    <li>Main line: +995 577 135 055</li>
+    <li>Service line: +995 577 135 077</li>
+    <li>Email: domkofegeorgia@gmail.com</li>
+  </ul>
+
+  <h2>Buying coffee</h2>
+  <h3>Where can I buy premium coffee in Tbilisi?</h3>
+  <p>You can buy Blasercafe at DimKava locations in Tbilisi: Z. Paliashvili Str. 66, East Point (Carrefour), and GOODWILL (Qavtaradze). We also help you choose the right flavor profile and grind for your brewing method, so you get a reliable result from day one.</p>
+
+  <h3>Where can I buy coffee in Batumi?</h3>
+  <p>Blasercafe is available in two Batumi locations: Z. Gorgiladze Str. 1 and 88 Zurab Gorgiladze St (Batumi Mall). Our team helps match coffee to your taste and routine, so your choice is practical, not random.</p>
+
+  <h3>Do you grind coffee for different brew methods?</h3>
+  <p>Yes — espresso, filter, Turkish style, French press, and more. Correct grind has direct impact on taste, so we adjust it to your machine and method at purchase.</p>
+
+  <h3>Do you offer decaf?</h3>
+  <p>Yes, decaf is available in the Blasercafe range depending on current stock. If decaf is your priority, contact us first and we will guide you to the right option.</p>
+
+  <h2>Buying coffee machines</h2>
+  <h3>Where can I buy a DeLonghi machine in Tbilisi?</h3>
+  <p>DeLonghi machines are available at DimKava locations in Tbilisi. We compare models based on your budget, drink preferences, and daily usage so the machine fits your real needs.</p>
+
+  <h3>Do you sell Melitta machines?</h3>
+  <p>Yes, Melitta models are available at DimKava in Georgia. We help you evaluate current models by use case, not only by specs.</p>
+
+  <h3>Which is better for home: automatic or manual?</h3>
+  <p>Automatic is better for fast daily consistency, while manual/semi-automatic gives more control and craft. We help you choose the format that is sustainable for your routine.</p>
+
+  <h3>What do I get besides the machine itself?</h3>
+  <p>You get guidance on selection, setup recommendations, care basics, and a clear service route. The key value is stable performance and confidence after purchase, not only the hardware.</p>
+
+  <h2>Service and reliability</h2>
+  <h3>Do you provide official DeLonghi service in Georgia?</h3>
+  <p>Yes. DimKava provides official DeLonghi service in Georgia. This gives you a clear diagnostics/repair process and lower risk of long downtime.</p>
+
+  <h3>Where should I contact if my machine has an issue?</h3>
+  <p>Contact service line +995 577 135 077 or email domkofegeorgia@gmail.com. Early contact with model and symptom details helps resolve issues faster.</p>
+
+  <h3>Can I request service from Batumi?</h3>
+  <p>Yes, requests are supported from both Batumi locations: Z. Gorgiladze Str. 1 and 88 Zurab Gorgiladze St (Batumi Mall). The team will guide next steps based on your case.</p>
+
+  <h3>What should I prepare before service request?</h3>
+  <p>Prepare machine model, brief issue description, and purchase/warranty details if available. This helps speed up diagnostics and routing.</p>
+
+  <h2>Value and choosing us</h2>
+  <h3>Why choose DimKava if market prices are similar?</h3>
+  <p>Because you get a full-cycle solution: coffee, equipment, expertise, and service in one system. The difference is not price pressure but daily reliability and long-term support.</p>
+
+  <h3>Why is your value stronger than product-only sellers?</h3>
+  <p>We stay with the customer after purchase through guidance, care recommendations, and service continuity. This reduces wrong choices, saves time, and lowers ownership risks.</p>
+
+  <h3>Why does it make sense to act now?</h3>
+  <p>When selection and setup are done correctly now, you avoid preventable problems later and get better daily results sooner. If you are already considering purchase or service, booking the next step now is the most practical move.</p>
+
+  <h3>Why buy from DimKava instead of a marketplace seller?</h3>
+  <p>Marketplace offers are often product-only, while we provide a full support system: pre-purchase guidance, setup recommendations, and a clear post-purchase service route. This reduces selection mistakes and gives more stable long-term use.</p>
+
+  <h3>How do I choose by budget without overpaying?</h3>
+  <p>We map the choice to your real usage: cups per day, drink types, and expected level of control. This helps avoid paying for features you will not use and avoids under-spec choices that create problems later.</p>
+
+  <h2>Delivery, payment, B2B</h2>
+  <h3>Do you deliver in Tbilisi and Batumi?</h3>
+  <p>Yes, delivery is available in both cities according to current policy. We confirm exact timing and conditions at order stage.</p>
+
+  <h3>Which payment methods are available?</h3>
+  <p>Cash, card, and bank transfer for legal entities are available under current policy.</p>
+
+  <h3>Do you work with offices, cafes, and hotels?</h3>
+  <p>Yes, we support B2B clients and help align coffee/equipment setup with business workload. For terms and invoicing: +995 577 135 055 or domkofegeorgia@gmail.com.</p>
+
+  <h3>Can you build a business setup based on cups-per-day demand?</h3>
+  <p>Yes. For B2B clients, we design machine and coffee setup around expected volume, menu format, and operational constraints. This gives more reliable performance than selecting equipment by specs only.</p>
+
+  <h2>Contacts and locations</h2>
+  <h3>Tbilisi</h3>
+  <ul>
+    <li>Z. Paliashvili Str. 66</li>
+    <li>East Point (Carrefour)</li>
+    <li>GOODWILL (Qavtaradze)</li>
+  </ul>
+
+  <h3>Batumi</h3>
+  <ul>
+    <li>Z. Gorgiladze Str. 1</li>
+    <li>88 Zurab Gorgiladze St (Batumi Mall)</li>
+  </ul>
+
+  <h3>Quick contact</h3>
+  <p>Main line: +995 577 135 055, Service line: +995 577 135 077, Email: domkofegeorgia@gmail.com.</p>
+</section>
